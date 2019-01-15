@@ -19,10 +19,6 @@ class FunctionsTest < MiniTest::Test
     assert_equal( 5, subtract_result )
   end
 
-
-
-
-
   def test_multiply()
     multiply_result = multiply( 4, 2 )
     assert_equal( 8, multiply_result )
@@ -59,13 +55,12 @@ class FunctionsTest < MiniTest::Test
     assert_equal( "January", result )
   end
 
-end 
+  def test_number_to_full_name__month_3()
+    result = number_to_full_month_name( 3 )
+    assert_equal( "March", result )
+  end
 
-#   def test_number_to_full_name__month_3()
-#     result = number_to_full_month_name( 3 )
-#     assert_equal( "March", result )
-#   end
-#
+
 #   def test_number_to_full_name__month_9()
 #     result = number_to_full_month_name( 9 )
 #     assert_equal( "September", result )
@@ -102,6 +97,4 @@ end
 #   def test_fahrenheit_to_celsius()
 #     #add test code here
 #   end
-#
-#
-# end
+end
