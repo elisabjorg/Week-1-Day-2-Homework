@@ -42,5 +42,15 @@ def number_to_full_month_name (month_number)
       end
 end
 
-def substring_month (month_number)
-  if mon
+def number_to_short_month_name (month_number)
+  if month_number == 1
+    return "Jan"
+
+  elsif month_number == 4
+    return "Apr"
+
+  else month_number == 10
+    return "Oct"
+
+  end
+end
